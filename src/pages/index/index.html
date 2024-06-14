@@ -13,30 +13,37 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div class="container-header">
-            <nav id="nav">
-                <div class="image-logo">
-                    <img src="/public/assets/images/formula-e-logo.svg" alt="Logo EcoRacer">
+            <nav id="navbar">
+                <div class="nav__image">
+                    <img class="image-logo" src="/public/assets/images/formula-e-logo.svg" alt="Logo EcoRacer">
                 </div>
-                <ul id="lista">
-                    <li class="item">
+                <ul id="nav__lista">
+                    <li class="lista-item">
                         <a href="#home" class="page">Home</a>
                     </li>
-                    <li class="item">
+                    <li class="lista-item">
                         <a href="#impacto-ambiental" class="page">Impacto Ambiental</a>
                     </li>
-                    <li class="item">
+                    <li class="lista-item">
                         <a href="#construa" class="page">Construa</a>
                     </li>
-                    <li class="item">
-                        <a href="#avatar" class="page">Avatar</a>
+                    <li class="lista-item">
+                        <a href="#Jogue" class="page">Jogue</a>
                     </li>
-                    <li class="item">
-                        <a href="#contatos" class="page">Contatos</a>
+                    <li class="lista-item">
+                        <a href="#footer" class="page">Contatos</a>
                     </li>
                 </ul>
+
+                <div class="nav__login"></div>
+                    <a class="login-image" href="/src/pages/login/login.html">
+                        <img src="/public/assets/images/icon-people-login.svg" alt="login">
+                    </a>
+                
             </nav>
+
             <div class="container-principal">
                 <div class="image-fundo">
                     <img src="/public/assets/images/car-header.png" alt="Carro do Header">
@@ -108,10 +115,50 @@
                 </div>
             </section>
         </div>
-    
     </main>
-    <footer>
-        
+
+
+    <footer id="footer">
+        <div class="footer-container ">
+            <div class="footer-esquerda">
+                <div class="esquerda-direcionamentos">
+                    <ul class="direcionamentos-lista">
+                        <li>
+                            <a href="#home" class="lista-item">Início</a>
+                        </li>
+                        <li>
+                            <a href="#impacto-ambiental" class="lista-item">Impacto Ambiental</a>
+                        </li>
+                        <li>
+                            <a href="#construa" class="lista-item">Construa</a>
+                        </li>
+                        <li>
+                            <a href="#jogue" class="lista-item">Jogue</a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="footer-direita">
+                <div class="direita-aplicativo">
+                    <h2>Baixe o APP</h2>
+                    <div class="aplicativo-images">
+                        <a class="image-item" href="#">
+                            <img class="image-apple" src="/public/assets/images/icon-app-store.svg" alt="Apple Store">
+                        </a>
+                        <a class="image-item" href="#">
+                            <img class="image-play" src="/public/assets/images/icon-play-store.svg" alt="Play Store">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-copyright">
+                <p>© 2024 EcoRacer. Todos os direitos reservados.</p>
+                <a href="#home">Voltar ao Topo</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
