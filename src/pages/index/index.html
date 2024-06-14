@@ -13,10 +13,12 @@
 </head>
 
 <body>
-
     <header>
-        <div class="header-container">
+        <div class="container-header">
             <nav id="nav">
+                <div class="image-logo">
+                    <img src="/public/assets/images/formula-e-logo.svg" alt="Logo EcoRacer">
+                </div>
                 <ul id="lista">
                     <li class="item">
                         <a href="#home" class="page">Home</a>
@@ -35,9 +37,81 @@
                     </li>
                 </ul>
             </nav>
+            <div class="container-principal">
+                <div class="image-fundo">
+                    <img src="/public/assets/images/car-header.png" alt="Carro do Header">
+                </div>
+                <div class="esquerda">
+                    <div class="image-logos">
+                        <img src="/public/assets/images/formula-e-logo.svg" alt="Logo Formula E">
+                        <img src="/public/assets/images/mahindra-racing-logo.svg" alt="Logo Mahindra">
+                    </div>
+                    <div class="text-header">
+                        <h1>Monte Seu Carrinho Sustentável Agora!</h1>
+                        <p>Faça e Pilote o Seu Próprio Fórmula E em Casa. Mergulhe nessa jornada sustentável e tecnológica!</p>
+                        <button class="btn-montar" id="montar" onclick="instrucoes()">Monte o Seu!</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
-
-
+    <main>
+        <div class="container-main">
+            <section id="impacto-ambiental" class="section-cards">
+                <div class="informacoes">
+                    <div class="text-impacto-ambiental">
+                        <h3>Impacto Ambiental</h3>
+                        <h1>Da pista ao Planeta</h1>
+                        <p>Faça parte desse ecossistema sustentável, construa o seu carrinho e corra agora mesmo!</p>
+                    </div>
+                    <div class="card">
+                        <h3>Corrida Verde</h3>
+                        <p>Entre as temporadas 6 e 7 a Fórmula E reduziu cerca de 40% de suas emissões.</p>
+                    </div>
+        
+                    <div class="card">
+                        <h3>EcoCorrida</h3>
+                        <p>Experimente a revolução da corrida com a EcoCorrida. Participe da corrida com um carro em casa, em tempo real!</p>
+                    </div>
+        
+                    <div class="card">
+                        <h3>EcoRacer: Crie e Corra Sustentável</h3>
+                        <p>Com a Lobito, você tem a chance de criar e correr em cada corrida. Combine sustentabilidade e velocidade!</p>
+                    </div>
+        
+                    <div class="card">
+                        <h3>Velocidade para um Futuro Mais Verde</h3>
+                        <p>Alidera o caminho para um futuro mais verde, combinando tecnologia e sustentabilidade em um só projeto, conectando você à corrida em tempo real!</p>
+                    </div>
+                </div>
+                <div class="button-construa">
+                    <button class="btn-construa" id="construa" onclick="instrucoes()">Construa Agora</button>
+                </div>
+            </section>
+            <section id="construa" class="secao-piloto">
+                <div class="titulo-construa">
+                    <h2>Construa</h2>
+                    <h1>Oficina de Montagem</h1>
+                </div>
+                <div class="container-piloto">
+                    <div class="carrossel">
+                        <!-- imagem de seta pra esquerda -->
+                        <img src="/public/assets/images/avatar-1.png" alt="Piloto">
+                        <!-- imagem de seta pra direita -->
+                    </div>
+                    <p>Selecione o seu piloto para te guiar nessa jornada!</p>
+                    <div class="button-next">
+                        <button class="btn-next" id="next" onclick="nextchat()">
+                            <!-- imagem de seta pra direita -->
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+    </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
