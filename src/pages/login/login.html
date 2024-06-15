@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/fonts.css">
+
 </head>
+
 <body>
-    
+    <div class="login__container">
+        <div class="login__content">
+            <div class="login__texts">
+                <h1 class="login-title">Faça o Login</h1>
+            </div>
+
+            <div class="login__card">
+                <div class="login__form">
+                    <div class="form-usuario">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                    </div>
+
+                    <div class="form-senha">
+                        <label for="senha">Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    </div>
+                    
+                    <button class="btn-login" type="button" id="btnLogar" onclick="logar()">LOGAR</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/public/javascript/script.js"></script>
 </body>
+
 </html>
