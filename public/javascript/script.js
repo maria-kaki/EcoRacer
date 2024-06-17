@@ -18,3 +18,26 @@ function logar() {
     }
 
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.images-carrossel img');
+    const prevButton = document.querySelector('.button-prev');
+    const nextButton = document.querySelector('.button-next');
+    let currentIndex = 0;
+
+    images[currentIndex].style.display = 'block';
+
+    prevButton.addEventListener('click', () => {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        images[currentIndex].style.display = 'block';
+    });
+
+    nextButton.addEventListener('click', () => {
+        images[currentIndex].style.display = 'none';
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        images[currentIndex].style.display = 'block';
+    });
+});
+

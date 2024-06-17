@@ -1,0 +1,30 @@
+.images-carrossel {
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.images-carrossel img {
+    max-width: auto;
+    height: 300px;
+    display: none; 
+}
+
+.secao-piloto{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-descricao input{
+    height: 100px;
+}
+
+.imagem-fundo img{
+    max-width: 80%;
+}

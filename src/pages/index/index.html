@@ -105,21 +105,46 @@
                 </div>
                 <div class="container-piloto">
                     <div class="carrossel">
-                        <!-- imagem de seta pra esquerda -->
-                        <img src="/public/assets/images/avatar-1.png" alt="Piloto">
-                        <!-- imagem de seta pra direita -->
+                        <div class="images-carrossel">
+                            <img src="/public/assets/images/avatar-branco.png" alt="Piloto branco">
+                            <img src="/public/assets/images/avatar-negro.png" alt="Piloto negro">
+                            <img src="/public/assets/images/avatar-branca.png" alt="Pilota branca">
+                            <img src="/public/assets/images/avatar-negra.png" alt="Pilota negra">
+                        </div>
+                        <button class="carrossel-button button-prev">&lt;</button>
+                        <button class="carrossel-button button-next">&gt;</button>
                     </div>
                     <p>Selecione o seu piloto para te guiar nessa jornada!</p>
                     <div class="button-next">
                         <button class="btn-next" id="next" onclick="nextchat()">
-                            <!-- imagem de seta pra direita -->
+                            <img src="/public/assets/images/seta.jpg" alt="Seta para próxima seção">
                         </button>
                     </div>
                 </div>
             </section>
+            <section id="fale-conosco">
+                <div class="formulario">
+                    <div class="form-usuario">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                    </div>
+
+                    <div class="form-email">
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                    </div>
+
+                    <div class="form-descricao">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição aqui">
+                    </div>
+                    
+                    <button class="btn-enviar" type="button" id="btnEnviar" onclick="enviar()">Enviar</button>
+
+                </div>
+            </section>
         </div>
     </main>
-
 
     <footer id="footer">
         <div class="footer-container ">
