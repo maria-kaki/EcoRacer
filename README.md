@@ -7,7 +7,9 @@ Clone o repositório na sua máquina para executar o projeto clicando no "index.
 
 ### Onde está o Login?
 Você pode fazer login no site clicando no botão da caricatura azul:
+######
 ![image-login](https://github.com/maria-kaki/EcoRacer/assets/123563801/7b82dc1c-fa05-47e3-b716-30c548b9f707)
+######
 Esse botão irá te direcionar para a página de login para validar suas informações.
 
 ### Onde está o slide show?
