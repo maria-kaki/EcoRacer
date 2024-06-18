@@ -15,6 +15,24 @@
     display: none; 
 }
 
+.next-page{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-next{  
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btn-next img{
+    max-width: 30px;
+}
+
 .secao-piloto{
     align-items: center;
     justify-content: center;
@@ -27,4 +45,10 @@
 
 .imagem-fundo img{
     max-width: 80%;
+}
+
+.secao-formulario{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
