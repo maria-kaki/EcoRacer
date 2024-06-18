@@ -16,10 +16,10 @@
     <header id="home">
         <div class="container-header">
             <nav id="navbar">
-                <div class="nav__image">
-                    <img class="image-logo" src="/public/assets/images/formula-e-logo.svg" alt="Logo EcoRacer">
+                <div class="nav-image">
+                    <img class="image-logo" src="/public/assets/images/EcoRacer-logo.png" alt="Logo EcoRacer">
                 </div>
-                <ul id="nav__lista">
+                <ul id="nav-lista">
                     <li class="lista-item">
                         <a href="#home" class="page">Home</a>
                     </li>
@@ -30,7 +30,7 @@
                         <a href="#construa" class="page">Construa</a>
                     </li>
                     <li class="lista-item">
-                        <a href="#Jogue" class="page">Jogue</a>
+                        <a href="#fale-conosco" class="page">Fale Conosco</a>
                     </li>
                     <li class="lista-item">
                         <a href="#footer" class="page">Contatos</a>
@@ -125,19 +125,20 @@
             <section id="fale-conosco" class="secao-formulario">
                 <div class="formulario">
                     <form class="form-contato">
+                        <h1>Fale conosco!</h1>
                         <div class="form-usuario">
                             <label for="usuario">Usuário</label>
-                            <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuário" required>
                         </div>
     
                         <div class="form-email">
                             <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <input type="email" name="email" id="email" placeholder="E-mail" required>
                         </div>
     
                         <div class="form-descricao">
                             <label for="descricao">Descrição</label>
-                            <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição aqui">
+                            <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição aqui" required>
                         </div>
                         
                         <button class="btn-enviar" type="submit" id="btnEnviar" onclick="enviar()">Enviar</button>

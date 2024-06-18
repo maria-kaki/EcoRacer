@@ -1,6 +1,6 @@
 function logar() {
-    var usuario = document.getElementById("usuario").value;
-    var senha = document.getElementById("senha").value;
+    var usuario = document.getElementById("usuario").value.toLowerCase();
+    var senha = document.getElementById("senha").value.toLowerCase();
     
     var usuarioTrue = "caio";
     var senhaTrue = "caio123";
@@ -11,7 +11,8 @@ function logar() {
         document.getElementById("senha").value = "";
         
     } else {
-        alert(`Login realizado com sucesso ${usuario}. Mergulhe no universo das corridas sustentáveis!`);
+        const usuarioFinal = usuario.charAt(0).toUpperCase() + usuario.slice(1);
+        alert(`Login realizado com sucesso ${usuarioFinal}. Mergulhe no universo das corridas sustentáveis!`);
         window.location.href = "/src/pages/index/index.html";
         document.getElementById("usuario").value = "";
         document.getElementById("senha").value = "";
@@ -49,12 +50,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const email = document.getElementById('email').value;
       const descricao = document.getElementById('descricao').value;
 
+      function limparCampos() {
+        document.getElementById('usuario').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('descricao').value = '';
+      }
+
       setTimeout(() => {
         const resposta = document.getElementById('resposta');
         resposta.innerHTML = `
           <h1>Recebemos sua mensagem!</h1>
           <p>Olá ${usuario}! Enviaremos um e-mail para ${email} respondendo sua mensagem "${descricao}"!</p>
         `;
-      }, 10);
+        limparCampos();
+      }, 100);
     });
 });
