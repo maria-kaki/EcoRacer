@@ -124,22 +124,26 @@
             </section>
             <section id="fale-conosco">
                 <div class="formulario">
-                    <div class="form-usuario">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="usuario" id="usuario" placeholder="Usuário">
-                    </div>
-
-                    <div class="form-email">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </div>
-
-                    <div class="form-descricao">
-                        <label for="descricao">Descrição</label>
-                        <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição aqui">
-                    </div>
-                    
-                    <button class="btn-enviar" type="button" id="btnEnviar" onclick="enviar()">Enviar</button>
+                    <form class="form-contato">
+                        <div class="form-usuario">
+                            <label for="usuario">Usuário</label>
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuário">
+                        </div>
+    
+                        <div class="form-email">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                        </div>
+    
+                        <div class="form-descricao">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" name="descricao" id="descricao" placeholder="Coloque a descrição aqui">
+                        </div>
+                        
+                        <button class="btn-enviar" type="submit" id="btnEnviar" onclick="enviar()">Enviar</button>
+    
+                        <div id="resposta"></div> 
+                    </form>
 
                 </div>
             </section>

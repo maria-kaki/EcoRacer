@@ -2,8 +2,8 @@ function logar() {
     var usuario = document.getElementById("usuario").value;
     var senha = document.getElementById("senha").value;
     
-    var usuarioTrue = "Caio";
-    var senhaTrue = "Caio123";
+    var usuarioTrue = "caio";
+    var senhaTrue = "caio123";
     
     if (usuario !== usuarioTrue || senha !== senhaTrue) {
         alert("Você inseriu usuário ou senha incorretos");
@@ -18,7 +18,6 @@ function logar() {
     }
 
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.images-carrossel img');
@@ -41,3 +40,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const formulario = document.querySelector('.form-contato');
+    formulario.addEventListener('submit', (event) => {
+      event.preventDefault();
+  
+      const usuario = document.getElementById('usuario').value;
+      const email = document.getElementById('email').value;
+      const descricao = document.getElementById('descricao').value;
+
+      setTimeout(() => {
+        const resposta = document.getElementById('resposta');
+        resposta.innerHTML = `
+          <h1>Recebemos sua mensagem!</h1>
+          <p>Olá ${usuario}! Enviaremos um e-mail para ${email} respondendo sua mensagem "${descricao}"!</p>
+        `;
+      }, 10);
+    });
+});
